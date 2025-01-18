@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "es2020",  // Usa 'esnext' o 'es2020', 'es2022', 'node16' o 'nodenext'
+    "moduleResolution": "node",
+    "target": "esnext",   // O 'es2020' o superior
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "types": ["vite/client", "vue"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ]
+}
