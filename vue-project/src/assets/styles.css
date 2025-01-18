@@ -1,49 +1,54 @@
-/* General */
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f8b1c7, #ff69b4);
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  background: linear-gradient(135deg, #ffeadb, #fcd8e3); /* Gradiente rose gold */
+  font-family: 'Roboto', sans-serif;
+  color: #333; 
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #333; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus {
+  outline: none;
+  border-color: #e75480; 
+  box-shadow: 0 0 10px #e75480;
+}
+
+button {
+  background: linear-gradient(135deg, #ff69b4, #f8b1c7);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background: linear-gradient(135deg, #f8b1c7, #ff69b4);
+  box-shadow: 0 0 15px #ff69b4;
+  transform: scale(1.05); 
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  body {
+    font-size: 0.9rem;
   }
-  
-  /* Formulario */
   input {
-    width: 100%;
-    padding: 10px 15px;
-    margin: 10px 0;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    transition: border-color 0.3s ease;
+    padding: 8px 12px; 
   }
-  input:focus {
-    outline: none;
-    border-color: #ff69b4;
-    box-shadow: 0 0 10px #ff69b4;
-  }
-  
   button {
-    background: linear-gradient(135deg, #ff69b4, #f8b1c7);
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    padding: 10px 15px; /
+    font-size: 0.9rem;
   }
-  button:hover {
-    background: linear-gradient(135deg, #f8b1c7, #ff69b4);
-    box-shadow: 0 0 15px #ff69b4;
-  }
-  
-  /* Responsive */
-  @media (max-width: 720px) {
-    body {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

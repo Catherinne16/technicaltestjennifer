@@ -58,6 +58,10 @@ const login = async () => {
 
   if (usernameError.value || passwordError.value) return;
 
+  // En esta sección, se solicitaba implementar una interfaz de inicio de sesión en la cual el usuario pudiera ingresar su correo electrónico y contraseña,
+  // Sin embargo, la API de "dummyjson" utilizada en este caso requiere el parámetro "username" en lugar de "email"
+  // El descubrimiento de este comportamiento inesperado se realizó al probar la API con Postman, lo que permitió identificar que la API requería 'username'.
+
   try {
     const response = await axios.post('https://dummyjson.com/auth/login', {
       username: username.value,
@@ -75,26 +79,24 @@ const login = async () => {
 </script>
 
 <style scoped>
-/* Estilos generales */
-.app-container {
+html, body {
   font-family: 'Roboto', sans-serif;
-  background: #f7f7f7;
-  padding: 0 20px;
+  background-color: #f7f7f7; 
+  padding: 0;
+  margin: 0;
   min-height: 100vh;
 }
 
-/* Barra de navegación */
 nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
-  font-size: 18px;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #ff80ab;
+  color: #1b0679; 
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -102,26 +104,25 @@ nav {
 }
 
 .nav-link:hover {
-  background-color: #ff6090;
-  color: white;
+  background-color: #882cf0; 
 }
 
-/* Estilos de la página de login */
 .login-container {
   max-width: 380px;
   margin: 80px auto;
   padding: 40px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95); 
   border-radius: 16px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 h2 {
-  color: #ff80ab;
+  color: hsl(239, 92%, 49%); 
   font-size: 24px;
   margin-bottom: 30px;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .input-group {
@@ -131,7 +132,7 @@ h2 {
 
 label {
   font-size: 14px;
-  color: #ff4081;
+  color: #2b2725; 
   display: block;
   margin-bottom: 8px;
   letter-spacing: 1px;
@@ -148,7 +149,7 @@ input {
 }
 
 input:focus {
-  border-color: #ff80ab;
+  border-color: hsl(229, 88%, 47%);
   outline: none;
 }
 
@@ -165,20 +166,22 @@ input:focus {
 button {
   width: 100%;
   padding: 14px;
-  background-color: #ff80ab;
+  background-color: #153ae2;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #ff6090;
+  background-color: #5349d4; 
+  transform: scale(1.02); 
 }
 
 button:focus {
   outline: none;
 }
+ 
 </style>
