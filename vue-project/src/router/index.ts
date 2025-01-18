@@ -5,18 +5,19 @@ import Dashboard from '../../views/dashboard.vue';
 const routes = [
   {
     path: '/',
-    component: () => import('../../views/login.vue'),
+    name: 'Login',
+    component: Login
   },
   {
-    path: '/Dashboard',
-    component: () => import('../../views/dashboard.vue'),
-  },
-  { path: '/:pathMatch(.*)*', name: 'Error', component: () => import('../../views/error404.vue') },
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
+  }
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+  history: createWebHistory(process.env.BASE_URL),
+  routes
 });
 
 export default router;

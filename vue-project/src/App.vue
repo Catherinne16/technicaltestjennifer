@@ -1,9 +1,15 @@
 <template>
-  <div class="app-container">
-    <router-view></router-view> <!-- Aquí se renderiza el contenido de cada ruta -->
+  <div id="app">
+    <router-view></router-view>  <!-- Aquí se renderizarán las vistas -->
   </div>
 </template>
 
-<script setup lang="ts">
-// Este componente solo se encarga de gestionar las rutas.
+<script>
+export default {
+  name: 'App'
+};
 </script>
+
+<style>
+/* Estilos generales para tu aplicación */
+</style>
