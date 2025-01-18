@@ -17,7 +17,7 @@ import { RouterLink } from 'vue-router';
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #ff80ab, #fce4ec); /* Fondo degradado */
+  background: linear-gradient(135deg, #ff80ab, #fce4ec); 
   text-align: center;
   padding: 20px;
 }
@@ -25,33 +25,33 @@ import { RouterLink } from 'vue-router';
 .error-title {
   font-size: 72px;
   font-weight: bold;
-  color: #ff3366; /* Color vibrante para el título */
+  color: #ff3366; 
   margin-bottom: 20px;
   letter-spacing: 1.5px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil para darle énfasis */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 .error-message {
   font-size: 20px;
-  color: #333; /* Color oscuro para mejorar contraste */
+  color: #333; 
   margin-bottom: 30px;
 }
 
 .btn-home {
   display: inline-block;
   padding: 16px 32px;
-  background-color: #ff3366; /* Color más intenso para el botón */
+  background-color: #ff3366; 
   color: white;
   font-size: 18px;
   text-decoration: none;
   border-radius: 12px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregado de sombra para efecto de elevación */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .btn-home:hover {
-  background-color: #ff005c; /* Un tono más oscuro cuando se pasa el mouse */
-  transform: scale(1.05); /* Le da un efecto de agrandado suave al pasar el mouse */
+  background-color: #ff005c; 
+  transform: scale(1.05); 
 }
 
 </style>
