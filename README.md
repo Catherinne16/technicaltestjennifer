@@ -84,14 +84,20 @@ bash
 Copiar
 Editar
 src/
+src/
 │
 ├── assets/          # Archivos estáticos como imágenes y fuentes
 ├── components/      # Componentes reutilizables
+│   └── lineChart.vue # Componente para mostrar gráficos de líneas
 ├── views/           # Vistas principales
+│   ├── dashboard.vue # Vista del dashboard con gráficos
+│   ├── error404.vue  # Página de error 404
+│   └── login.vue     # Página de inicio de sesión
 ├── router/          # Configuración de rutas de Vue Router
-├── store/           # Gestión del estado global (si usas Vuex)
+│   └── index.ts      # Archivo de configuración de rutas
 ├── App.vue          # Componente raíz
 └── main.ts          # Entrada principal, donde se inicia la aplicación
+
 📝 Configuración y personalización:
 La configuración principal de la aplicación se realiza en los archivos tsconfig.json y vite.config.ts.
 
