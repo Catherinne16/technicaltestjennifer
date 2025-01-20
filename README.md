@@ -86,7 +86,7 @@ Editar
 src/
 src/
 │
-├── assets/          # Archivos estáticos como imágenes y fuentes
+├── assets/          # Imágenes y fuentes
 ├── components/      # Componentes reutilizables
 │   └── lineChart.vue # Componente para mostrar gráficos de líneas
 ├── views/           # Vistas principales
